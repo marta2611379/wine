@@ -1,0 +1,27 @@
+<div class="container" style="padding-top: 80px;">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th scope="col">Ім'я</th>
+                <th scope="col">Прізвище</th>
+                <th scope="col">Телефон</th>
+                <th scope="col">Статус</th>
+                <th scope="col">Видалити</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of arrayOrders; let i=index;">
+                <td>{{i+1}}</td>
+                <td>{{order.name}}</td>
+                <td>{{order.surname}}</td>
+                <td>{{order.tel}}</td>
+                <td><input  type="checkbox" [checked]=order.status (click)="checkboxClick(order)"></td>
+                <td><button class="btn btn-danger" (click)="deleteOrder(order)" [disabled]=!order.status>delete</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
