@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/final-wine",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
