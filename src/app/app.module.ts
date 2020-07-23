@@ -50,8 +50,10 @@ import {MatCardModule} from '@angular/material/card';
 import { WineAboutComponent } from './pages/products/wine-about/wine-about.component';
 import {NgxPaginationModule} from 'ngx-pagination'; 
 
-import * as firebase from 'firebase';
+// import * as firebase from 'firebase';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
+import * as firebase from 'firebase/app';
+import 'firebase/auth';
 
 firebase.initializeApp(environment.firebase);
 
